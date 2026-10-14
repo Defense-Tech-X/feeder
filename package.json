@@ -1,0 +1,15 @@
+{
+  "name": "virtual-drone-controller-feeder",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Feeds control state into the VirtualDroneController HID driver",
+  "scripts": {
+    "random": "node src/random-feeder.js",
+    "mqtt": "node src/mqtt-feeder.js"
+  },
+  "dependencies": {
+    "mqtt": "^5.16.0",
+    "node-hid": "^3.4.0"
+  }
+}
